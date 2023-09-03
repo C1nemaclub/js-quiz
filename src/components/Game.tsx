@@ -5,6 +5,7 @@ import SyntaxHightlighter from 'react-syntax-highlighter';
 import { gradientDark } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 import { ArrowBackIosNew, ArrowForwardIos } from '@mui/icons-material';
 import Question from '../types/Question';
+import Footer from './Footer';
 
 interface GameProps {}
 
@@ -66,14 +67,13 @@ const Game: FC<GameProps> = ({}) => {
         <IconButton onClick={goPrevQuestion} disabled={currentQuestion === 0}>
           <ArrowBackIosNew />
         </IconButton>
-
         {currentQuestion + 1} / {questions.length}
-        
         <IconButton onClick={goNextQuestion} disabled={currentQuestion >= questions.length - 1}>
           <ArrowForwardIos />
         </IconButton>
       </Stack>
       <Question info={questionsInfo} />
+      <Footer />
     </>
   );
 };

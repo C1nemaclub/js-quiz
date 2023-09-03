@@ -14,7 +14,7 @@ const Start: FC<StartProps> = ({}) => {
   };
 
   return (
-    <Button variant='contained' onClick={handleClick}>
+    <Button variant='contained' onClick={handleClick} sx={{ marginTop: '16px' }}>
       Start !
     </Button>
   );

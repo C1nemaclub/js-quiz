@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { Card, Icon, IconButton, List, ListItem, ListItemButton, ListItemText, Stack, Typography } from '@mui/material';
+import { Card, IconButton, List, ListItem, ListItemButton, ListItemText, Stack, Typography } from '@mui/material';
 import { useQuestionsStore } from '../store/questions';
 import SyntaxHightlighter from 'react-syntax-highlighter';
 import { gradientDark } from 'react-syntax-highlighter/dist/esm/styles/hljs';
